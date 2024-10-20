@@ -1,0 +1,195 @@
+:root {
+    --body-background: #f0f0f0;
+    --border-lines: #ababab;
+    --shade: #eaeaea;
+    --text-color: #080808;
+    --paperwhite: #424242;
+    --accent: #2b2c15;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--border-lines);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-background);
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    margin: 0px auto 0px;
+    padding: 20px 0px;
+    width: calc(95% - 0px);
+    max-width: calc(900px - 0px);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-lines);
+    border-right: 1px solid var(--border-lines);
+    border-left: 1px solid var(--border-lines);
+    background-color: var(--body-background);
+    color: var(--text-color);
+}
+
+header div {
+    margin: 0px 0px 0px 20px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div img {
+    margin: 0px 20px 0px 0px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+header div h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+header nav button {
+    margin: 0px 20px 0px 0px;
+    padding: 0px 0px 5px 0px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-bottom: 1px solid var(--border-lines);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+header nav button:hover {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    transition: 0.3s;
+}
+
+#parent-content-box {
+    margin: 80px auto 0px;
+    width: calc(95% - 0px);
+    max-width: calc(900px - 0px);
+    height: fit-content;
+    min-height: 100vh;
+    border-left: 1px solid var(--border-lines);
+    border-right: 1px solid var(--border-lines);
+}
+
+#content-box {
+    padding: 20px 20px;
+    width: calc(100% - 40px);
+    height: fit-content;
+    background-color: var(--shade);
+    border-bottom: 1px solid var(--border-lines);
+}
+
+#content-box-spanholder {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#content-box-spanholder span {
+    color: var(--paperwhite);
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: "Roboto Mono";
+}
+
+#content-box-spanholder-name {
+    padding: 0px 15px 0px 0px;
+    border-right: 1px solid var(--border-lines);
+}
+
+#content-box-spanholder-date {
+    padding: 0px 0px 0px 15px;
+}
+
+#content-box p {
+    margin: 15px 0px 0px 0px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+}
+
+#parent-input-wrapper {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+#input-wrapper {
+    margin: 0px auto 20px;
+    padding: 10px 20px 10px 30px;
+    width: calc(95% - 100px);
+    max-width: calc(900px - 100px);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px;
+    border: 1px solid var(--border-lines);
+    background-color: var(--shade);
+}
+
+#input-wrapper input {
+    width: 90%;
+    height: fit-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+#input-wrapper button {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+}
