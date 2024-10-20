@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/headerlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="stylesheets/signin.css">
+    <script defer src="logic/signin.js"></script>
+    <title>Koko - Sign In</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav>
+            <div>
+                <img src="images/headerlogo.png" alt="Header Logo">
+                <h1>KOKO</h1>
+            </div>
+            <button onclick="window.location.href='mailto:aryanonagar@gmail.com'">Help</button>
+        </nav>
+    </header>
+
+    <!-- form --> 
+    <form>
+        <h2>Sign In</h2>
+        <input type="email" placeholder="E-mail">
+        <input type="password" placeholder="Password">
+        <div>
+            <button id="signin-button" type="submit">Sign In</button>
+            <button id="signup-button" onclick="window.location.href='signup.html'">Create an account</button>
+        </div>
+    </form>
+
+</body>
+</html>
