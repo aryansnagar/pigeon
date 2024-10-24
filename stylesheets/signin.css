@@ -127,7 +127,7 @@ form div {
     margin: 20px 0px 0px 0px;
 }
 
-form #signin-button {
+form #primary-button {
     margin: 0px 20px 0px 0px;
     padding: 10px 20px;
     width: fit-content;
@@ -139,7 +139,7 @@ form #signin-button {
     cursor: pointer;
 }
 
-form #signup-button {
+form #secondry-button {
     padding: 0px 0px 2px 0px;
     width: fit-content;
     height: fit-content;
@@ -151,7 +151,7 @@ form #signup-button {
     background-color: transparent;
 }
 
-form #signup-button:hover {
+form #secondry-button:hover {
     border-bottom: 1px solid var(--text-color);
     transition: 0.3s;
 }
