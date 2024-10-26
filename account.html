@@ -26,19 +26,19 @@
     </header>
 
     <!-- form -->
-    <form>
+    <form id="form">
         <label>Primary Key</label>
         <textarea type="text" id="ta-primarykey" disabled>20241020</textarea>
         <label>Name</label>
-        <textarea name="name" id="ta-name">John Doe</textarea>
+        <textarea name="name" id="ta-name" disabled>John Doe</textarea>
         <label>Email</label>
-        <textarea name="email" id="ta-email">johndoe@gmail.com</textarea>
+        <textarea name="email" id="ta-email" disabled>johndoe@gmail.com</textarea>
         <label>Password</label>
-        <textarea name="Password" id="ta-password">...........</textarea>
+        <textarea name="Password" id="ta-password" disabled>...........</textarea>
         <div>
-            <button id="edit_button">Edit Information</button>
-            <button id="save_button">Save Information</button>
-            <button id="logout_button" onclick="window.location.href='signin.html'">Log Out</button>
+            <button type="button" id="edit_button">Edit Information</button>
+            <button type="button" id="save_button">Save Information</button>
+            <button type="button" id="logout_button">Log Out</button>
         </div>
     </form>
 
