@@ -17,7 +17,7 @@ document.getElementById("input-wrapper-button").addEventListener("click", functi
         // Create the name span
         const nameSpan = document.createElement("span");
         nameSpan.id = "content-box-spanholder-name";
-        nameSpan.textContent = inputValue; // Set the name from input
+        nameSpan.textContent = "John doe"; // Default text
 
         // Create the date span
         const dateSpan = document.createElement("span");
@@ -31,7 +31,8 @@ document.getElementById("input-wrapper-button").addEventListener("click", functi
         // Create the paragraph
         const para = document.createElement("p");
         para.id = "content-box-para";
-        para.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing."; // Default text
+        para.textContent = inputValue;         // Set the name from input
+        
 
         // Append span holder and paragraph to the content box
         contentBox.appendChild(spanHolder);
